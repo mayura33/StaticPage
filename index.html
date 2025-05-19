@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="css/css-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css-8th.css"  media="all">
+    <script type="text/javascript">
+        function replaceHide(id, newContent) {
+            if (newContent) {
+                if (id == "div_name") {
+                    newContent = newContent.trim();
+                    var lastIndex = newContent.lastIndexOf(" ");
+                    var firstName = newContent.substring(0, lastIndex);
+                    var lastName = newContebiont.substring(lastIndex + 1);
+                    document.getElementById(id).innerHTML = firstName;
+                    document.getElementById("div_surname").innerHTML = lastName;
+                } else {
+                    document.getElementById(id).innerHTML = newContent;
+                }
+            } else {
+                document.getElementById(id).parentNode.style.display = "none";
+            }
+        }
+        function replaceHideParent(id, newContent) {
+            if (newContent) {
+                document.getElementById(id).innerHTML = newContent;
+            } else {
+                document.getElementById(id).parentNode.style.display = "none";
+            }
+        }
+        function replaceImg(id, newContent) {
+            if (newContent) {
+                document.getElementById(id).src = newContent;
+            } else {
+                document.getElementById(id).parentNode.style.display = "none";
+            }
+        }
+        function hide(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container" style="padding: 10px">
+        <div class="px-4 py-2 border" style="border-color: #DEE2E6">
+            <div class="row">
+                <div class="col-5 px-0 pb-3" style="background-color: #C9C3A1">
+                    <div class="img">
+                        <img id="iv_profile" class="" width="100%" src="images/main_pic.jpg">
+                    </div>
+                    <div class="left_Sub text-center">
+                        <div>
+                            <div id="div_personal_details" class="heading_main mt-4">
+                                -:: Personal Details ::-
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading">
+                                Height :
+                            </div>
+                            <div id="div_height" class="details">
+                                6
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                Weight :
+                            </div>
+                            <div id="div_weight" class="details">
+                                75kg
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                DOB :
+                            </div>
+                            <div id="div_dob" class="post ml-1">
+                                06-05-1993
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                Cast :
+                            </div>
+                            <div id="div_cast" class="details">
+                                Leuva Patel
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="heading mt-3">
+                                Occupation :
+                            </div>
+                            <div id="div_occupation" class="details">
+                                Four proses in diamond (office)
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="heading mt-3">
+                                Contact :
+                            </div>
+                            <div id="div_contact" class="details">
+                                +91 7874 9333 78
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="heading mt-3">
+                                Hobbies :
+                            </div>
+                            <div id="div_hobbies" class="details">
+                                Music <br>
+                                Travelling <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 p-0">
+                    <div class="p-5" style="background-color: #d7d7d9;">
+
+                        <div id="div_name" class="name mb-0  h1 " style="font-weight: 600;">
+                            NILESH
+                        </div>
+                        <div id="div_surname" class="name " style="font-weight: 600;">
+                            GAJERA
+                        </div>
+                        <div class="row ml-0 mt-1 mr-0">
+
+                            <div class="row pl-2 ml-0 mt-2 text-white w-100" style="background-color: #000;">
+                                <div>
+                                    <div id="div_education" class="details h6  mt-2 "
+                                        style=" letter-spacing: 2px; font-weight: 300; font-family: raleway;">
+                                        Four proses in diamond (office)
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="heading_main mt-3 mb-0 ">
+                                    Education :
+                                </div>
+                                <div id="div_other_details" class="details">
+                                    12Th Pass
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_Sub pl-5">
+                        <div id="div_family_bg" class="heading_main mt-4">
+                            Family Background ::-
+                        </div>
+                        <div>
+                            <div class="heading mt-2">
+                                Father Name :
+                            </div>
+                            <div id="div_father_name" class="details">
+                                Chaturbhai Kanjibhai Gajera
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-2">
+                                Occupation :
+                            </div>
+                            <div id="div_father_name" class="details">
+                                Farmer
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                Mother Name :
+                            </div>
+                            <div id="div_mother_name" class="details">
+                                Rekhaben Chaturbhai Gajerapavatiya
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                Contact No :
+                            </div>
+                            <div id="div_family_contact" class="details">
+                                +91 9099 37 5256
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                Native Place :
+                            </div>
+                            <div id="div_native_place" class="details">
+                                Mota Ujala ( Ta :- Moti Kukavav, District :- Amreli)
+                            </div>
+                        </div>
+
+                        <div id="div_maternal_details" class="heading_main mt-4">
+                            Maternal Details ::-
+                        </div>
+                        <div>
+                            <div class="heading mt-2">
+                                Uncle Name :
+                            </div>
+                            <div id="div_m_name" class="details">
+                                Manharbhai Harjibhai Devani
+                            </div>
+                        </div>
+                        <div>
+                            <div class="heading mt-3">
+                                Place :
+                            </div>
+                            <div id="div_m_place" class="details">
+                                Road Vavdi ( Ta :- Moti Kukavav, District :- Amreli)
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="heading mt-3">
+                                Address :
+                            </div>
+                            <div id="div_m_place" class="details">
+                                240-Rang avadhut soc,<br>Kenal road,
+                                <br>Surat, 395010
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
